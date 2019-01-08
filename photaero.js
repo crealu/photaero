@@ -45,7 +45,6 @@ function displayProject(div) {
   let contentToDisplay = document.getElementById(div);
   contentToDisplay.style.display = 'block';
   contentToDisplay.style.opacity = '1';
-  contentToDisplay.style.top = '-50px';
 }
 
 function displayContent(topic) {
@@ -72,24 +71,24 @@ function displayContent(topic) {
       switch (topic) {
         case 'About':
           toggleNavList();
-          changeTitle('About', titleH2);
+          changeTitle(topic, titleH2);
           displayProject('about-content');
           break;
         case 'Services':
           toggleNavList();
-          changeTitle('Services', titleH2);
+          changeTitle(topic, titleH2);
           displayProject('services-content');
           //createList('s');
           break;
-        case 'Photo':
+        case 'Gallery':
           toggleNavList();
-          changeTitle('Photo', titleH2);
+          changeTitle(topic, titleH2);
           displayProject('photo-content');
           //createList('va');
           break;
-        case 'Video':
+        case 'Showreel':
           toggleNavList();
-          changeTitle('Video', titleH2);
+          changeTitle(topic, titleH2);
           displayProject('video-content');
         break;
       }

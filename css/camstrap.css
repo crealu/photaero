@@ -50,9 +50,7 @@
 
 .col {
   position: relative;
-  float: left;
   padding-right: 15px;
-  padding-left: 15px;
 }
 
 .col-push-1 {
@@ -107,9 +105,6 @@
   width: 100%;
   display: block
 }
-
-
-
 
 @media (max-width: 900px) and (min-width: 470px) {
   .col-push-1 {

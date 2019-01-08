@@ -28,7 +28,7 @@ body {
   height: auto;
 }
 
-#flake-logo {
+#logo {
   position: relative;
   float: left;
   padding: 4px;
@@ -134,9 +134,9 @@ body {
 #close-mobile {
   position: relative;
   float: right;
-  left: -45px;
+  left: -55px;
   font-size: 24px;
-  top: -8px;
+  top: -5px;
   cursor: pointer;
   margin: 0;
 }
@@ -145,13 +145,18 @@ body {
   position: relative;
   opacity: 1;
   transition: 1s;
-  background: url('main background.jpg');
+  background: url('venice background.jpg');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100%;
   width: 105%;
   height: 650px;
   text-align: center;
+}
+
+#mobile-background {
+  width: 100%;
+  position: relative;
 }
 
 #hello-welcome {
@@ -162,7 +167,7 @@ body {
   margin: 0 auto;
   font-size: 28px;
   text-align: center;
-  top: 50px;
+  top: 25px;
 }
 
 #section-title-here {
@@ -226,6 +231,9 @@ body {
   color: #868686;
   margin: 0;
   padding-bottom: 6px;
+  text-align: center;
+  font-weight: 100;
+  position: relative;
 }
 
 .project-text {
@@ -283,38 +291,6 @@ body {
   height: 300px;
 }
 
-.project-background:nth-child(1n) {
-  background-color: #f2f2f2;
-}
-
-.project-background:nth-child(2n) {
-  background-color: #e0e0e0;
-}
-
-.project-background:nth-child(3n) {
-  background-color: #f2f2f2;
-}
-
-.project-background:nth-child(4n) {
-  background-color: #dddddd;
-}
-
-.project-background:nth-child(5n) {
-  background-color: #cccccc;
-}
-
-.project-background:nth-child(6n) {
-  background-color: #e0e0e0;
-}
-
-.project-background:nth-child(7n) {
-  background-color: #f2f2f2;
-}
-
-.project-background:nth-child(8n) {
-  background-color: #cccccc;
-}
-
 #modal {
   display: none;
   position: fixed;
@@ -353,18 +329,28 @@ body {
   display: block;
 }
 
+.page-footer {
+  height: 40px;
+  background: white;
+}
+
+.project-img-u {
+  display: none;
+}
+
 /* bp-navigation */
 @media (max-width: 900px) and (min-width: 250px) {
   #cameron-miller {
     position: relative;
     padding-left: 10px;
-    left: 15px;
-    font-size: 22px;
+    left: 10px;
+    font-size: 24px;
+    top: -2px;
   }
 
-  #flake-logo {
-    width: 40px;
-    left: 15px;
+  #logo {
+    width: 35px;
+    left: 8px;
     top: -13px;
   }
 
@@ -386,18 +372,18 @@ body {
     float: right;
     padding-right: 20px;
     z-index: 101;
-    left: -15px;
-    top: -30px;
+    left: -5px;
+    top: -29px;
   }
 
   #nav-list-container-mobile {
     display: block;
-    top: -50px;
+    top: -55px;
     left: 355px;
   }
 
   .navigation-link {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .other-sites {
@@ -420,12 +406,22 @@ body {
 @media (max-width: 899px) and (min-width: 701px) {
   #title-content-container {
     height: 380px;
+    background: url('venice mobile.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    top: 40px;
   }
 }
 
 @media (max-width: 725px) and (min-width: 250px) {
   #title-content-container {
-    height: 450px;
+    height: 400px;
+    background: url('venice mobile.jpg');
+    background-attachment: local;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    top: 50px;
   }
 }
 
@@ -449,7 +445,11 @@ body {
 
 @media (max-width: 449px) and (min-width: 250px) {
   #section-title-here {
-    top: -300px;
+    top: -275px;
+  }
+
+  .section-title {
+    top: 20px;
   }
 
   .topic-btn-list {
@@ -500,18 +500,32 @@ body {
   }
 
   #cam-about {
-    width: 75%;
+    width: 90%;
+  }
+
+  .project-img-u {
+    display: block;
+    width: 90%;
+    top: 40px;
+    position: relative;
+    padding-bottom: 20px;
+    margin: 0 auto;
   }
 }
 
 @media (max-width: 649px) and (min-width: 250px) {
   .project-background {
-    height: 350px;
+    height: 200px;
+  }
+
+  .project-background-p {
+    height: 375px;
   }
 
   .project-text-wrapper {
     padding: 0px 6px 0px 6px;
-    top: 55px;
+    top: 40px;
+    text-align: center;
   }
 
   .project-img-wrapper {
@@ -520,15 +534,41 @@ body {
   }
 
   .project-title {
-    font-size: 22px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #939393;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
   }
 
   .project-text {
     font-size: 16px;
+    top: 20px;
+    position: relative;
   }
 
   #cam-about {
-    width: 75%;
-    top: 25px;
+    width: 85%;
+    top: 40px;
+    position: relative;
+    padding-bottom: 20px;
+  }
+
+  .project-img-u {
+    display: block;
+    width: 90%;
+    top: 20px;
+    position: relative;
+    padding-bottom: 20px;
+    margin: 0 auto;
+  }
+
+  .project-video {
+    display: block;
+    width: 90%;
+    top: 20px;
+    position: relative;
+    padding-bottom: 20px;
+    margin: 0 auto;
   }
 }
